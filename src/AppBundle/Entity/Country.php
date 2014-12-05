@@ -62,26 +62,10 @@ class Country
         return $this->name;
     }
 
-    /**
-     * Set cities
-     *
-     * @param \AppBundle\Entity\Cities $cities
-     * @return Country
-     */
-    public function setCities(\AppBundle\Entity\Cities $cities)
-    {
-        $this->cities = $cities;
 
-        return $this;
-    }
 
-    /**
-     * Get cities
-     *
-     * @return \AppBundle\Entity\Cities 
-     */
-    public function getCities()
+    public function __toString()
     {
-        return $this->cities;
+        return $this->name;
     }
 }
